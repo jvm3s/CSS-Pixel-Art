@@ -1,0 +1,350 @@
+body {
+    background:  #8b0f28;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas {
+    width: 444px;
+    height: 440px;
+    background: crimson;
+  
+}
+
+.pixel {
+    width: 22px;
+    height: 22px;
+    float: left;
+    box-shadow: 0px 0px 1px 0px transparent;
+}
+
+:root {
+    --b1: rgb(128,64,36);
+    --b2: rgb(85,42,23);
+    --b3: rgb(70,34,18);
+    --b4: rgb(54,24,13);
+
+    --s1: rgb(242,201,145);
+    --s2: rgb(236,195,139);
+    --s3: rgb(226,185,129);
+    --s4: rgb(216,174,116);
+    --s5: rgb(165,128,76);
+
+    --m: rgb(216,145,127);
+    --b: rgb(230,172,135);
+}
+
+.pixel:nth-child(29),
+.pixel:nth-child(30),
+.pixel:nth-child(31),
+.pixel:nth-child(32),
+.pixel:nth-child(33),
+.pixel:nth-child(34),
+.pixel:nth-child(35),
+.pixel:nth-child(47),
+.pixel:nth-child(48),
+.pixel:nth-child(49),
+.pixel:nth-child(50),
+.pixel:nth-child(51),
+.pixel:nth-child(52),
+.pixel:nth-child(53),
+.pixel:nth-child(54),
+.pixel:nth-child(55),
+.pixel:nth-child(56),
+.pixel:nth-child(57),
+.pixel:nth-child(65),
+.pixel:nth-child(66),
+.pixel:nth-child(67),
+.pixel:nth-child(76),
+.pixel:nth-child(77),
+.pixel:nth-child(78),
+.pixel:nth-child(84),
+.pixel:nth-child(85),
+.pixel:nth-child(97),
+.pixel:nth-child(98),
+.pixel:nth-child(99),
+.pixel:nth-child(103),
+.pixel:nth-child(104),
+.pixel:nth-child(107),
+.pixel:nth-child(108),
+.pixel:nth-child(109),
+.pixel:nth-child(110),
+.pixel:nth-child(118),
+.pixel:nth-child(119),
+.pixel:nth-child(123),
+.pixel:nth-child(126),
+.pixel:nth-child(131),
+.pixel:nth-child(132),
+.pixel:nth-child(139),
+.pixel:nth-child(143),
+.pixel:nth-child(145),
+.pixel:nth-child(153),
+.pixel:nth-child(154),
+.pixel:nth-child(155),
+.pixel:nth-child(156),
+.pixel:nth-child(157),
+.pixel:nth-child(159),
+.pixel:nth-child(163),
+.pixel:nth-child(178),
+.pixel:nth-child(179),
+.pixel:nth-child(183),
+.pixel:nth-child(184),
+.pixel:nth-child(198),
+.pixel:nth-child(199)
+
+{
+    background: var(--b4);
+}
+
+.pixel:nth-child(68),
+.pixel:nth-child(69),
+.pixel:nth-child(70),
+.pixel:nth-child(71),
+.pixel:nth-child(72),
+.pixel:nth-child(73),
+.pixel:nth-child(74),
+.pixel:nth-child(75),
+.pixel:nth-child(86),
+.pixel:nth-child(95),
+.pixel:nth-child(96),
+.pixel:nth-child(105),
+.pixel:nth-child(116),
+.pixel:nth-child(117),
+.pixel:nth-child(124),
+.pixel:nth-child(133),
+.pixel:nth-child(134),
+.pixel:nth-child(135),
+.pixel:nth-child(136),
+.pixel:nth-child(137),
+.pixel:nth-child(138),
+.pixel:nth-child(144),
+.pixel:nth-child(158),
+.pixel:nth-child(164) {
+    background: var(--b3);
+}
+
+.pixel:nth-child(87),
+.pixel:nth-child(88),
+.pixel:nth-child(90),
+.pixel:nth-child(93),
+.pixel:nth-child(94),
+.pixel:nth-child(106),
+.pixel:nth-child(111),
+.pixel:nth-child(112),
+.pixel:nth-child(115),
+.pixel:nth-child(125) {
+    background: var(--b2);
+}
+
+.pixel:nth-child(89),
+.pixel:nth-child(91),
+.pixel:nth-child(92),
+.pixel:nth-child(113),
+.pixel:nth-child(114) {
+    background: var(--b1);
+}
+
+.pixel:nth-child(127),
+.pixel:nth-child(128),
+.pixel:nth-child(129),
+.pixel:nth-child(130),
+.pixel:nth-child(146),
+.pixel:nth-child(151),
+.pixel:nth-child(152),
+.pixel:nth-child(165),
+.pixel:nth-child(173),
+.pixel:nth-child(174),
+.pixel:nth-child(175),
+.pixel:nth-child(176),
+.pixel:nth-child(177),
+.pixel:nth-child(185) {
+    background: var(--s3);
+}
+
+.pixel:nth-child(147),
+.pixel:nth-child(148),
+.pixel:nth-child(149),
+.pixel:nth-child(150),
+.pixel:nth-child(166),
+.pixel:nth-child(167),
+.pixel:nth-child(168),
+.pixel:nth-child(169),
+.pixel:nth-child(170),
+.pixel:nth-child(171),
+.pixel:nth-child(172),
+.pixel:nth-child(186),
+.pixel:nth-child(191),
+.pixel:nth-child(192),
+.pixel:nth-child(205),
+.pixel:nth-child(206),
+.pixel:nth-child(210),
+.pixel:nth-child(211),
+.pixel:nth-child(212),
+.pixel:nth-child(216),
+.pixel:nth-child(226),
+.pixel:nth-child(229),
+.pixel:nth-child(230),
+.pixel:nth-child(231),
+.pixel:nth-child(232),
+.pixel:nth-child(233),
+.pixel:nth-child(236),
+.pixel:nth-child(247),
+.pixel:nth-child(248),
+.pixel:nth-child(249),
+.pixel:nth-child(250),
+.pixel:nth-child(251),
+.pixel:nth-child(252),
+.pixel:nth-child(253),
+.pixel:nth-child(254),
+.pixel:nth-child(255),
+.pixel:nth-child(268),
+.pixel:nth-child(269),
+.pixel:nth-child(270),
+.pixel:nth-child(272),
+.pixel:nth-child(273),
+.pixel:nth-child(274)
+ {
+    background: var(--s1);
+}
+
+.pixel:nth-child(197),
+.pixel:nth-child(217),
+.pixel:nth-child(225),
+.pixel:nth-child(237),
+.pixel:nth-child(246),
+.pixel:nth-child(256),
+.pixel:nth-child(266),
+.pixel:nth-child(267),
+.pixel:nth-child(275),
+.pixel:nth-child(276),
+.pixel:nth-child(287),
+.pixel:nth-child(288),
+.pixel:nth-child(289),
+.pixel:nth-child(290),
+.pixel:nth-child(291),
+.pixel:nth-child(292),
+.pixel:nth-child(293),
+.pixel:nth-child(294),
+.pixel:nth-child(295) {
+    background: var(--s2);
+}
+
+.pixel:nth-child(187),
+.pixel:nth-child(188),
+.pixel:nth-child(189),
+.pixel:nth-child(190),
+.pixel:nth-child(193),
+.pixel:nth-child(194),
+.pixel:nth-child(195),
+.pixel:nth-child(196),
+.pixel:nth-child(207),
+.pixel:nth-child(213)
+ {
+    background: #000;
+}
+
+.pixel:nth-child(208),
+.pixel:nth-child(214) {
+    background: #808080;
+}
+
+.pixel:nth-child(209),
+.pixel:nth-child(215) {
+    background: #fff;
+}
+
+.pixel:nth-child(204),
+.pixel:nth-child(218) {
+    background: var(--s5);
+}
+
+.pixel:nth-child(224),
+.pixel:nth-child(238) {
+    background: var(--s4);
+}
+
+.pixel:nth-child(227),
+.pixel:nth-child(228),
+.pixel:nth-child(234),
+.pixel:nth-child(235) {
+    background: var(--b);
+}
+
+.pixel:nth-child(271) {
+    background: var(--m);
+}
+
+.pixel:nth-child(309),
+.pixel:nth-child(310),
+.pixel:nth-child(311),
+.pixel:nth-child(312),
+.pixel:nth-child(313) {
+    background: var(--s3);
+}
+
+.pixel:nth-child(327),
+.pixel:nth-child(335),
+.pixel:nth-child(346),
+.pixel:nth-child(347),
+.pixel:nth-child(348),
+.pixel:nth-child(354),
+.pixel:nth-child(355),
+.pixel:nth-child(356),
+.pixel:nth-child(367),
+.pixel:nth-child(368),
+.pixel:nth-child(374),
+.pixel:nth-child(375),
+.pixel:nth-child(388),
+.pixel:nth-child(389),
+.pixel:nth-child(393),
+.pixel:nth-child(394) {
+    background: #263c61;
+}
+
+
+.pixel:nth-child(330),
+.pixel:nth-child(328),
+.pixel:nth-child(329),
+.pixel:nth-child(332),
+.pixel:nth-child(333),
+.pixel:nth-child(334),
+.pixel:nth-child(349),
+.pixel:nth-child(353),
+.pixel:nth-child(369),
+.pixel:nth-child(373) {
+    background: #8c9cbd;
+}
+
+.pixel:nth-child(331),
+.pixel:nth-child(370),
+.pixel:nth-child(371),
+.pixel:nth-child(372){
+    background: #800000;
+}
+
+
+.pixel:nth-child(350),
+.pixel:nth-child(351),
+.pixel:nth-child(352),
+.pixel:nth-child(390),
+.pixel:nth-child(391),
+.pixel:nth-child(392) {
+    background: #3f0606;
+}
+
+.pixel:nth-child(345),
+.pixel:nth-child(357),
+.pixel:nth-child(365),
+.pixel:nth-child(366),
+.pixel:nth-child(376),
+.pixel:nth-child(377),
+.pixel:nth-child(385),
+.pixel:nth-child(386),
+.pixel:nth-child(387),
+.pixel:nth-child(395),
+.pixel:nth-child(396),
+.pixel:nth-child(397) {
+    background: #161e2c;
+}
